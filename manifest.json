@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "WhatsApp Automation Bot",
+  "version": "1.0",
+  "permissions": ["scripting", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "WhatsApp Automation Bot"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
