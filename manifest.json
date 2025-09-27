@@ -3,6 +3,7 @@
   "name": "WhatsApp Automation Bot",
   "version": "1.0",
   "permissions": ["scripting", "tabs"],
+  "host_permissions": ["https://web.whatsapp.com/*"],
   "background": {
     "service_worker": "background.js"
   },
